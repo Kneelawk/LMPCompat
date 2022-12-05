@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.kneelawk.lmpcompat.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "StructureTransformMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
