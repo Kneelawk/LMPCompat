@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 /**
  * This mixin gets Create and LMP to play nice together.
  */
-@Mixin(value = StructureTransform.class, remap = false)
+@Mixin(StructureTransform.class)
 public class StructureTransformMixin {
     @Inject(method = "apply(Lnet/minecraft/block/BlockState;)Lnet/minecraft/block/BlockState;", at = @At("HEAD"), cancellable = true)
     private void onApplyBlockState(BlockState state, CallbackInfoReturnable<BlockState> cir) {
