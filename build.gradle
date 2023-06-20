@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.0-SNAPSHOT'
+    id 'fabric-loom' version '1.1-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -47,11 +47,12 @@ repositories {
         name "TeraformersMC"
         url "https://maven.terraformersmc.com/"
     }
-    maven {
-        // for Fake Player API
-        name "Cafeteria"
-        url "https://maven.cafeteria.dev/releases/"
-    }
+//    maven {
+//        // for Fake Player API
+//        name "Cafeteria"
+//        url "https://maven.cafeteria.dev/releases/"
+//        allowInsecureProtocol = true
+//    }
     maven {
         // for Reach Entity Attributes
         url "https://maven.jamieswhiteshirt.com/libs-release"
@@ -64,6 +65,7 @@ repositories {
             includeGroup("com.github.Chocohead")
             includeGroup("com.github.Draylar.omega-config")
             includeGroup("com.github.LlamaLad7")
+            includeGroup("com.github.llamalad7.mixinextras")
         }
     }
     maven {

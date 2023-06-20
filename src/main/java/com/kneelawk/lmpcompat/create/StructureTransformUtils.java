@@ -1,6 +1,7 @@
 package com.kneelawk.lmpcompat.create;
 
-import com.simibubi.create.content.contraptions.components.structureMovement.StructureTransform;
+import com.simibubi.create.content.contraptions.StructureTransform;
+
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.DirectionTransformation;
 
