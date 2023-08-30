@@ -22,6 +22,10 @@ group = project.maven_group
 
 repositories {
     maven {
+        name "QuiltMC"
+        url "https://maven.quiltmc.org/repository/release/"
+    }
+    maven {
         name "AlexIIL"
         url "https://alexiil.uk/maven/"
     }
@@ -88,7 +92,7 @@ repositories {
 dependencies {
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    mappings "org.quiltmc:quilt-mappings:${project.minecraft_version}+build.${project.quilt_mappings}:intermediary-v2"
     modCompileOnly "net.fabricmc:fabric-loader:${project.loader_version}"
     modLocalRuntime "net.fabricmc:fabric-loader:${project.loader_version}"
 
